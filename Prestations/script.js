@@ -1,9 +1,9 @@
 
-  fetch(`https://portfolio-back-delta.vercel.app/video`)
+  fetch(`https://portfolio-back-delta.vercel.app/videos`)
   .then((response) => response.json())
   .then((data) => {
-   console.log('front:', data.videos.items)
-   console.log('haha')
+   console.log('front:', data)
+   
             data.videos.items.forEach(video => {
               const videoId = video.id.videoId;
               console.log('video', videoId)
