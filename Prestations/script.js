@@ -1,5 +1,5 @@
 
-  fetch(`https://portfolio-back-delta.vercel.app/`)
+  fetch(`https://portfolio-back-delta.vercel.app/video`)
   .then((response) => response.json())
   .then((data) => {
    console.log('front:', data.videos.items)
