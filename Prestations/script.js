@@ -1,5 +1,5 @@
 
-  fetch(`https://portfolio-back-coral.vercel.app/videos`)
+  fetch(`http://localhost:3000/videos`)
   .then((response) => response.json())
   .then((data) => {
    console.log('front:', data)
