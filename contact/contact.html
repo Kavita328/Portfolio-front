@@ -16,11 +16,14 @@
 
     <body>
         <header class="navbar">
-            <h2>Portfolio</h2>
-            <ul>
+            <h2>Portfolio</h2> 
+            <div class="hamburger" onclick="toggleMenu()">
+                &#9776; 
+            </div>
+            <ul class="nav-links">
                 <a href="../index.html"><li>Accueil</li></a>
                 <a href="../Prestations/prestations.html"><li>Portfolio</li> </a>
-                <a href="../contact/contact.html"><li>Contact</li></a>
+                <a href="./contact.html"><li>Contact</li></a>
             </ul>
         </header>
         
@@ -96,7 +99,10 @@
                 </div>
                 
             </div>
-            
+            <script>function toggleMenu() {
+                const navLinks = document.querySelector('.nav-links');
+                navLinks.classList.toggle('active');
+            }</script>
         </footer>   
 
 </html>

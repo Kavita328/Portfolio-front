@@ -18,10 +18,13 @@
     <body>
         <header class="navbar">
             <h2>Portfolio</h2>
-            <ul>
+            <div class="hamburger" onclick="toggleMenu()">
+                &#9776; 
+            </div>
+            <ul class="nav-links">
                 <a href="./index.html"><li>Accueil</li></a>
-                <a href="../Prestations/prestations.html"><li>Portfolio</li> </a>
-                <a href="../contact/contact.html"><li>Contact</li></a>
+                <a href="./Prestations/prestations.html"><li>Portfolio</li> </a>
+                <a href="./contact/contact.html"><li>Contact</li></a>
             </ul>
 
         </header>
@@ -41,12 +44,12 @@
 
                 <div class="div-container">
                     <div>
-                        <a href="https://tickethack-front-sigma.vercel.app/index.html"><img src="../Prestations/images/Tickethack.png" alt="Site Tickethack"></a>
+                        <a href="https://tickethack-front-sigma.vercel.app/index.html"><img src="./Prestations/images/Tickethack.png" alt="Site Tickethack"></a>
                         <p>Exemple de site de réservation de train</p>
                     </div>
 
                     <div>
-                        <a href="https://mymoviz-front-b4rrgme8l-kavita-bhatias-projects.vercel.app/"><img src="../Prestations/images/mymoviz.png" alt="Site My Moviz"></a>
+                        <a href="https://mymoviz-front-b4rrgme8l-kavita-bhatias-projects.vercel.app/"><img src="./Prestations/images/mymoviz.png" alt="Site My Moviz"></a>
                         <p>Exemple de site de streaming</p>
                     </div>
                 </div>
@@ -72,7 +75,10 @@
             
             
         </section>
-        
+        <script>function toggleMenu() {
+            const navLinks = document.querySelector('.nav-links');
+            navLinks.classList.toggle('active');
+        }</script>
     </body> 
 
 

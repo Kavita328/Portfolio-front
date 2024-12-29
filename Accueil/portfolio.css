@@ -1,7 +1,7 @@
 
 *{
     margin: 0;  
-
+    
 }
 
 body{
@@ -47,6 +47,7 @@ li {
     color: #1D385E;
 }
 
+
 a {
     text-decoration: none;
 }
@@ -73,6 +74,22 @@ h1 {
     text-align:center;
     font-family: "zain";
     color: aliceblue;
+}
+
+.hamburger {
+    display: none;
+    font-size: 2rem;
+    cursor: pointer;
+    margin-right: 15px; 
+}
+
+.nav-links {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
 
@@ -212,7 +229,6 @@ h1 {
 .prestations button {
     margin: 20px; 
     background: #1D385E;
-    
     border-radius: 20px;
     color: white;
     width: 100px;
@@ -302,3 +318,100 @@ h1 {
   }
 
 
+  @media  screen and (max-width: 768px) {
+   h1 {
+    font-size: 80px;
+   }
+  .accueil h2 {
+    font-size: 40px;
+    text-align: center;
+   }
+   h2 {
+    font-size: 40px;
+    margin-top: 50px;
+    margin-bottom: 20px;
+   }
+  
+   .div-container {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: center; 
+    padding: 20px;
+    margin: 20px;
+    border-radius: 40px;
+    box-shadow: 10px 10px 10px 10px rgb(89, 88, 88);
+    background: rgba(255, 255, 255, 1);
+    overflow: visible;
+}
+
+.div-container div {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    margin-bottom: 20px; 
+}
+
+.div-container img {
+    width: 200px;
+    height: auto;
+    margin: 10px 0; 
+    border: 10px solid rgb(44, 43, 43);
+    border-radius: 10px;
+}
+
+.div-container p {
+    text-align: center; 
+    margin-top: 10px; 
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 16px; 
+}
+
+.videos {
+    flex-direction: column;
+    flex-wrap: nowrap;
+    padding: 20px;
+    margin : 20px;
+    border-radius: 40px;
+    box-shadow: 10px 10px 10px 10px rgb(89, 88, 88);
+    background: rgba(255, 255, 255, 1);
+    overflow: none;
+}
+
+iframe{
+    width: 100%; 
+    height: 200px; 
+    padding: 10px; 
+    border: none;
+}
+
+.nav-links {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background: none;
+    top: 100%;
+    left: 0;
+}
+
+.nav-links.active {
+    display: flex;
+}
+
+.hamburger {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+li {
+    text-align: center;
+    border: none;
+    padding: 15px 0;
+    margin: 0;
+    font-size: 18px;
+}
+    
+  }
